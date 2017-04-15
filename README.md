@@ -1,3 +1,7 @@
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/cc2a655227cf43c2b516265666cd1373)](https://www.codacy.com/app/javawebinar/topjava10)
+[![Build Status](https://travis-ci.org/JavaWebinar/topjava10.svg?branch=master)](https://travis-ci.org/JavaWebinar/topjava10)
+[![Dependency Status](https://dependencyci.com/github/JavaWebinar/topjava10/badge)](https://dependencyci.com/github/JavaWebinar/topjava10)
+
 Java Enterprise Online Project 
 ===============================
 
@@ -73,7 +77,9 @@ Maven/ Spring/ Security/ JPA(Hibernate)/ REST(Jackson)/ Bootstrap(CSS)/ jQuery +
 - Spring Internationalization
 - Домашнее задание (HW6 + Optional)
 
-#### 04.05: 7-е занятие
+#### Перерыв на праздники. Делаем большое ДЗ и подтягиваем "хвосты".
+
+#### 11.05: 7-е занятие
 - Разбор домашнего задания HW6 + Optional
 - Автогенерация DDL по модели
 - Тестирование Spring MVC
@@ -83,7 +89,7 @@ Maven/ Spring/ Security/ JPA(Hibernate)/ REST(Jackson)/ Bootstrap(CSS)/ jQuery +
 - Тестирование через SoapUi. UTF-8
 - Домашнее задание (HW7 + Optional)
 
-#### 11.05: 8-е занятие
+#### 18.05: 8-е занятие
 - Разбор домашнего задания HW7 + Optional
 - WebJars. jQuery и JavaScript frameworks
 - Bootstrap
@@ -92,7 +98,7 @@ Maven/ Spring/ Security/ JPA(Hibernate)/ REST(Jackson)/ Bootstrap(CSS)/ jQuery +
 - Добавление Spring Security
 - Домашнее задание (HW8 + Optional)
 
-#### 18.05: 9-е занятие
+#### 25.05: 9-е занятие
 - Разбор домашнего задания HW8 + Optional
 - Spring Binding
 - Spring Validation
@@ -104,7 +110,7 @@ Maven/ Spring/ Security/ JPA(Hibernate)/ REST(Jackson)/ Bootstrap(CSS)/ jQuery +
 - Cookie. Session
 - Домашнее задание (HW9 + Optional)
 
-#### 25.05: 10-е занятие
+#### 01.06: 10-е занятие
 - Разбор домашнего задания HW10 + Optional
 - Spring Security Taglib. Method Security Expressions
 - Интерсепторы. Редактирование профиля. JSP tag files
@@ -114,7 +120,7 @@ Maven/ Spring/ Security/ JPA(Hibernate)/ REST(Jackson)/ Bootstrap(CSS)/ jQuery +
 - Защита от межсайтовой подделки запросов (CSRF)
 - Домашнее задание (HW10)
 
-#### 01.06: 11-е занятие
+#### 08.06: 11-е занятие
 - Разбор домашнего задания HW10 + Optional
 - Рефакторинг
 - Фильтруем JSON через @JsonView 
