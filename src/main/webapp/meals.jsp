@@ -1,3 +1,4 @@
+<%@ page import="ru.javawebinar.topjava.util.TimeUtil" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
@@ -17,24 +18,24 @@
     </style>
 </head>
 <body>
+<h2><a href="meals?action=create">Add meal</a></h2>
 <table border="1" cellpadding="8" cellspacing="0">
     <tr>
-        <th>ID</th>
         <th>Date</th>
         <th>Description</th>
         <th>Calories</th>
+        <th>Update</th>
         <th>Delete</th>
-        <%--<th></th>--%>
     </tr>
-<c:forEach  var="row" items="${meals}" varStatus="rowCounter">
-    ${row}
-    <tr class="${row.exceed ? 'red' : 'green'}">
-        <td> ${row.id}</td>
-        <td> ${row.dateTime.toLocalDate()} ${row.dateTime.toLocalTime()}</td>
-        <td> ${row.description}</td>
-        <td> ${row.calories}</td>
-        <%--<td><a href="meals?action=update&id=${meal.id}">Update</a></td>--%>
-        <td><a href="meals?action=delete&id=${row.id}">Delete</a></td>
+<c:forEach items="${mealList}" var="meal">
+    <jsp:useBean id="meal" scope="page" type="ru.javawebinar.topjava.to.MealWithExceed"/>
+    <tr class="${meal.exceed? 'red' : 'green'}">
+        <%--<td> ${meal.dateTime.toLocalDate()} ${row.dateTime.toLocalTime()}</td>--%>
+       <td><%=TimeUtil.toString(meal.getDateTime())%></td>
+        <td> ${meal.description}</td>
+        <td> ${meal.calories}</td>
+        <td><a href="meals?action=update&id=${meal.id}">Update</a></td>
+        <td><a href="meals?action=delete&id=${meal.id}">Delete</a></td>
     </tr>
 </c:forEach>
 </table>
